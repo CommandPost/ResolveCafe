@@ -9,3 +9,4 @@ We keep track of these bugs via our [GitHub issues site](https://github.com/Comm
 ### Recently Reported
 
 Here's a list of the **30 most recently reported** DaVinci Resolve bugs on our GitHub issues site:
+

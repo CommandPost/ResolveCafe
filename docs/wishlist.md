@@ -7,3 +7,4 @@ This page is dedicated to keeping track of DaVinci Resolve feature requests, via
 ### Recently Added
 
 Here's a list of the **30 most recently added** DaVinci Resolve feature requests:
+
