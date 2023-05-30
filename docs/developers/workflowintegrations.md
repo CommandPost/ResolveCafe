@@ -376,3 +376,7 @@ Please refer to the **Basic Resolve API** section in `/Developer/Scripting/READM
 ### Further Information
 
 This document provides a basic introduction only, and does not list all available `UIManager` elements and attributes. As `UIManager` is based on Qt, you can refer to the Qt documentation [here](https://doc.qt.io/qt-5/qwidget.html) for more information on element types and their attributes. There are also many third-party examples and discussions available on user forums for DaVinci Resolve and Fusion Studio.
+
+---
+
+{{ include "giscus.md" }}

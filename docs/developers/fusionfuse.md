@@ -5,3 +5,7 @@ You can find the **Fusion Fuse Manual** via the **Help > Documentation > Develop
 !!!
 Want to contribute? [Learn more here!](https://resolve.cafe/contribute/)
 !!!
+
+---
+
+{{ include "giscus.md" }}

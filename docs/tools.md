@@ -13,3 +13,7 @@ Want to contribute? [Learn more here!](https://resolve.cafe/contribute/)
 Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML.
 
 You can learn more [here](https://julien.chichignoud.com/resolve-script-scaling-fix).
+
+---
+
+{{ include "giscus.md" }}

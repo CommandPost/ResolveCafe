@@ -140,3 +140,7 @@ On **Windows**, they are located at:
 - 1D LUT: `%PROGAMDATA%\Blackmagic Design\DaVinci Resolve\LUT\VFX IO\Linear to Cineon Log.cube`
 - 3D LUT: `%PROGAMDATA%\Blackmagic Design\DaVinci Resolve\LUT\Blackmagic Design\Blackmagic 4.6K Film to Rec709.cube`
 - Shaper LUT: `%PROGAMDATA%\Blackmagic Design\DaVinci Resolve\LUT\ACES\LMT ACES v0.1.1.cube`
+
+---
+
+{{ include "giscus.md" }}

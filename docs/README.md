@@ -41,3 +41,7 @@ This is still very much a work-in-progress, and we'll be adding content graduall
 !!!
 Want to contribute or advertise? [Learn more here!](https://resolve.cafe/contribute/)
 !!!
+
+---
+
+{{ include "giscus.md" }}

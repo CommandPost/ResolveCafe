@@ -5,3 +5,7 @@ This section of the site is dedicated to linking to great external articles, as 
 !!!
 Want to contribute? [Learn more here!](https://resolve.cafe/contribute/)
 !!!
+
+---
+
+{{ include "giscus.md" }}
