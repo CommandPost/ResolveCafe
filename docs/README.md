@@ -6,7 +6,7 @@
 
 ---
 
-#### Make FCP Cafe your Home Page
+#### Make Resolve Cafe your Home Page
 
 +++ Safari
 1. In the top left corner of your screen, select **Safari** and then **Preferences** and then **General**.
