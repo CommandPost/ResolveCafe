@@ -4,8 +4,6 @@
 
 **Resolve Cafe is a technical community for professional DaVinci Resolve editors.**
 
-[!button variant="warning" target="blank" text="Get the Latest News via our RSS Feed"](https://resolve.cafe/rss.xml)
-
 ---
 
 #### Make FCP Cafe your Home Page
@@ -34,6 +32,8 @@
 5. Click OK.
 6. Restart your browser.
 +++
+
+[!button variant="warning" target="blank" text="Get the Latest News via our RSS Feed"](https://resolve.cafe/rss.xml)
 
 ---
 
