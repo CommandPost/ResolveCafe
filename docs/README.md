@@ -15,9 +15,7 @@ Want to contribute or advertise? [Learn more here!](https://resolve.cafe/contrib
 ---
 
 !!!info Sponsored
-**DaVinci Resolve Studio Scaling Fix**
-Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML.
-[Purchase Here](https://julien.chichignoud.com/resolve-script-scaling-fix)
+**DaVinci Resolve Studio Scaling Fix:** Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML. [Download Now!](https://julien.chichignoud.com/resolve-script-scaling-fix)
 !!!
 
 ---
