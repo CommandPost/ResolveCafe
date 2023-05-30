@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Tue, 30 May 2023 05:00:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 May 2023 06:31:52 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Tuesday 30th May 2023]]></title>
@@ -21,6 +21,8 @@
 </ul>
 <p>This is still very much a work-in-progress, and we'll be adding content gradually over the coming weeks and months.</p>
 <hr>
+<hr>
+<p>{{ include &quot;giscus.md&quot; }}</p>
 ]]></description>
             <link>https://resolve.cafe/#tuesday-30th-may-2023</link>
             <guid isPermaLink="false">Tuesday 30th May 2023</guid>
