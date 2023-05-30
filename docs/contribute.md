@@ -20,15 +20,25 @@ If you're not confident using GitHub, you can email us content here: [support@la
 
 ### Advertising & Sponsored Content
 
-We're open to promoting DaVinci Resolve products and services on the front page in a clean and useful way.
+We're open to promoting DaVinci Resolve products and services on the front page within the Latest News in a clean and useful way.
 
-Please contact us to discuss: [support@latenitefilms.com](mailto:support@latenitefilms.com?subject=ResolveCafe)
+For example, here's a sponsored post that could appear on the home page within the Latest News:
+
+!!!info Sponsored
+**DaVinci Resolve Studio Scaling Fix:** Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML. [Download Now!](https://julien.chichignoud.com/resolve-script-scaling-fix)
+!!!
+
+Sponsored posts can just be plain text, with a single link. We don't allow images, videos, or other embedded elements.
+
+If you would like to advertise on Resolve Cafe, please contact us to discuss: [support@latenitefilms.com](mailto:support@latenitefilms.com?subject=ResolveCafe)
 
 ---
 
 ### Powered by Retype
 
 Resolve Cafe is powered by [Retype](https://retype.com) and hosted on [GitHub Pages](https://pages.github.com).
+
+The comments feature at the bottom of every page is powered by [giscus](https://giscus.vercel.app).
 
 ---
 
