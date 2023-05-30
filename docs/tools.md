@@ -5,3 +5,11 @@ This page is dedicated to handy applications that can be used in conjunction wit
 !!!
 Want to contribute? [Learn more here!](https://resolve.cafe/contribute/)
 !!!
+
+---
+
+### DaVinci Resolve Studio Scaling Fix
+
+Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML.
+
+You can learn more [here](https://julien.chichignoud.com/resolve-script-scaling-fix).

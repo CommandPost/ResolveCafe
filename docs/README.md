@@ -14,6 +14,14 @@ Want to contribute or advertise? [Learn more here!](https://resolve.cafe/contrib
 
 ---
 
+!!!info Sponsored
+**DaVinci Resolve Studio Scaling Fix**
+Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML.
+[Purchase Here](https://julien.chichignoud.com/resolve-script-scaling-fix)
+!!!
+
+---
+
 ### Tuesday 30th May 2023
 
 Following on from the interest in [FCP Cafe](https://fcp.cafe), Chris at [LateNite](https://latenitefilms.com/technology/) has thrown together this site to be a new "home page" and community for professional editors using DaVinCi Resolve.
