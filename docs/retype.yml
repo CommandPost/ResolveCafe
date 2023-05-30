@@ -20,6 +20,11 @@ links:
   icon: comment-discussion
   target: blank
 
+- text: FCP Cafe
+  link: https://fcp.cafe
+  icon: git-branch
+  target: blank
+
 - text: Chris on Twitter
   link: https://twitter.com/chrisatlatenite
   icon: people
