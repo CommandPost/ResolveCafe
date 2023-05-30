@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Tue, 30 May 2023 21:54:45 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 May 2023 21:58:13 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Make FCP Cafe your Home Page]]></title>
@@ -16,7 +16,7 @@
 +++ Chrome</li>
 <li>In the top right corner of your computer's browser, click <strong>More</strong> icon and then <strong>Settings</strong>.</li>
 <li>Under <strong>Appearance</strong>, turn on <strong>Show home button</strong>.</li>
-<li>Select your current homepage, then, enter: <code>https://fcp.cafe</code>.
+<li>Select your current homepage, then, enter: <code>https://resolve.cafe</code>.
 +++ Firefox</li>
 <li>Drag this tab to the <strong>Home</strong> button, then release.</li>
 <li>Click <strong>Yes</strong>.
@@ -24,12 +24,12 @@
 <li>In the upper right corner of your browser, select the <strong>More</strong> icon and then <strong>Settings</strong>.</li>
 <li>Under <strong>Set your homepage</strong>, click the Down arrow and then <strong>A specific page or pages</strong>.</li>
 <li>If you have a current homepage: Next to the URL, click <strong>X</strong>.</li>
-<li>Click <strong>Enter a URL</strong>. Then, type: <code>https://fcp.cafe</code>.
+<li>Click <strong>Enter a URL</strong>. Then, type: <code>https://resolve.cafe</code>.
 +++ Internet Explorer</li>
 <li>In the menu bar on the top of your browser, click <strong>Tools</strong>.</li>
 <li>Select <strong>Internet Options</strong>.</li>
 <li>Click the <strong>General</strong> tab.</li>
-<li>Under &quot;Home page,&quot; enter: <code>https://fcp.cafe</code>.</li>
+<li>Under &quot;Home page,&quot; enter: <code>https://resolve.cafe</code>.</li>
 <li>Click OK.</li>
 <li>Restart your browser.
 +++</li>
