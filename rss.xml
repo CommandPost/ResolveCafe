@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Resolve Cafe]]></title>
+        <description><![CDATA[Latest News from Resolve Cafe]]></description>
+        <link>https://resolve.cafe</link>
+        <generator>Resolve Cafe</generator>
+        <lastBuildDate>Tue, 30 May 2023 00:24:34 GMT</lastBuildDate>
+        <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Tuesday 30th May 2023]]></title>
+            <description><![CDATA[<p>Following on from the interest in <a href="https://fcp.cafe">FCP Cafe</a>, Chris at <a href="https://latenitefilms.com/technology/">LateNite</a> has thrown together this site to be a new &quot;home page&quot; and community for professional editors using DaVinCi Resolve.</p>
+<p>We want this site to be:</p>
+<ul>
+<li><strong>Open:</strong> This site will remain open-source on GitHub for anyone to suggest pull requests</li>
+<li><strong>Up-to-date &amp; Relevant:</strong> We want this site to always be up-to-date and relevant</li>
+<li><strong>No bullshit:</strong> We want this site to be honest, truthful, useful and professional</li>
+<li><strong>Community Driven:</strong> This isn't our site, it's &quot;owned&quot; by the professional DaVinci Resolve Community</li>
+<li><strong>Modern:</strong> This site should work great on the latest browsers, including mobile</li>
+<li><strong>Fast &amp; Clean:</strong> This site should load quickly, and be easy to navigate</li>
+<li><strong>No analytics or user tracking:</strong> No cookies here!</li>
+</ul>
+<p>This is still very much a work-in-progress, and we'll be adding content gradually over the coming weeks and months.</p>
+<hr>
+]]></description>
+            <link>https://resolve.cafe/#tuesday-30th-may-2023</link>
+            <guid isPermaLink="false">Tuesday 30th May 2023</guid>
+            <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
