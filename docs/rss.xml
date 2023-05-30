@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Tue, 30 May 2023 21:53:45 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 May 2023 21:54:45 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Make FCP Cafe your Home Page]]></title>
@@ -34,6 +34,7 @@
 <li>Restart your browser.
 +++</li>
 </ol>
+<p><a href="https://resolve.cafe/rss.xml">!button variant=&quot;warning&quot; target=&quot;blank&quot; text=&quot;Get the Latest News via our RSS Feed&quot;</a></p>
 <hr>
 <hr>
 ]]></description>
