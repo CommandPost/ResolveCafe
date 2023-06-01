@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Wed, 31 May 2023 01:16:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jun 2023 08:58:39 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Wednesday 31st May 2023]]></title>
@@ -39,6 +39,7 @@ Buy Look Designer Perpetual <a href="https://colourlab.ai/look-designer-resolve-
 </ul>
 <p>This is still very much a work-in-progress, and we'll be adding content gradually over the coming weeks and months.</p>
 <hr>
+<p>{target=&quot;_blank&quot;}</p>
 <hr>
 <p>{{ include &quot;giscus.md&quot; }}</p>
 ]]></description>
