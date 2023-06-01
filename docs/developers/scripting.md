@@ -8,7 +8,9 @@ Whilst a lot of this page is currently just a "copy and paste" job from the exis
 
 ### Community
 
-There's a really great community over at [We Suck Less](https://www.steakunderwater.com/wesuckless/index.php) that discuss scripting in DaVinci Resolve.
+There's a really great community over at [We Suck Less](https://www.steakunderwater.com/wesuckless/index.php){target="_blank"} that discuss scripting in DaVinci Resolve.
+
+You can also get help at [Blackmagic's Developer Forum](https://forum.blackmagicdesign.com/viewforum.php?f=12&sid=f22b8d91290f36eb3cd987459d49f572){target="_blank"}.
 
 ---
 

@@ -6,17 +6,17 @@ We do not collect any personal identifiable information from you when you visit 
 
 When embedding YouTube videos, we always enable the "privacy-enhanced mode" to prevent YouTube from using cookies.
 
-We use [GitHub Pages](https://pages.github.com) to host and manage this website.
+We use [GitHub Pages](https://pages.github.com){target="_blank"} to host and manage this website.
 
-We use [GitHub Issues](https://github.com/CommandPost/ResolveCafe/issues) to manage our [Bug Tracker](https://resolve.cafe/bugtracker/) & [Wish List](https://resolve.cafe/wishlist/).
+We use [GitHub Issues](https://github.com/CommandPost/ResolveCafe/issues){target="_blank"} to manage our [Bug Tracker](https://resolve.cafe/bugtracker/){target="_blank"} & [Wish List](https://resolve.cafe/wishlist/){target="_blank"}.
 
-We use [GitHub Discussions](https://github.com/CommandPost/ResolveCafe/discussions) to manage the comments and discussions on the site.
+We use [GitHub Discussions](https://github.com/CommandPost/ResolveCafe/discussions){target="_blank"} to manage the comments and discussions on the site.
 
-You can read GitHub's Privacy Statement [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+You can read GitHub's Privacy Statement [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement){target="_blank"}.
 
-The source code and change log for this website can be found on [GitHub](https://github.com/CommandPost/ResolveCafe).
+The source code and change log for this website can be found on [GitHub](https://github.com/CommandPost/ResolveCafe){target="_blank"}.
 
-Any code (such as GitHub Actions) are licensed under a [MIT License](https://github.com/CommandPost/ResolveCafe/blob/main/LICENSE).
+Any code (such as GitHub Actions) are licensed under a [MIT License](https://github.com/CommandPost/ResolveCafe/blob/main/LICENSE){target="_blank"}.
 
 ---
 
@@ -38,7 +38,7 @@ We have no control over, and assume no responsibility for the content, privacy p
 
 We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
 
-You can check the change history of this privacy policy [here](https://github.com/CommandPost/ResolveCafe/commits/main/docs/privacy.md).
+You can check the change history of this privacy policy [here](https://github.com/CommandPost/ResolveCafe/commits/main/docs/privacy.md){target="_blank"}.
 
 ---
 

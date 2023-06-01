@@ -22,9 +22,9 @@ Moreover, DaVinci Resolve's support for OpenFX reflects Blackmagic's commitment 
 
 ### Examples
 
-The [Gyroflow OpenFX plugin](https://github.com/gyroflow/gyroflow-ofx) is a great example of a very slick open-source OpenFX plugin that works great in DaVinci Resolve.
+The [Gyroflow OpenFX plugin](https://github.com/gyroflow/gyroflow-ofx){target="_blank"} is a great example of a very slick open-source OpenFX plugin that works great in DaVinci Resolve.
 
-It's written in Rust and uses [OpenFX bindings for Rust](https://github.com/itadinanta/ofx-rs).
+It's written in Rust and uses [OpenFX bindings for Rust](https://github.com/itadinanta/ofx-rs){target="_blank"}.
 
 ---
 

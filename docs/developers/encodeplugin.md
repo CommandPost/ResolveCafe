@@ -48,7 +48,7 @@ The supported architectures on each operating system are:
 
 The 'Examples' folder contains a sample plugin for the x264 encoder in the folder named 'x264_encoder_plugin'.
 
-1. Compile the x264 plugin from source (downloadable from [here](https://www.videolan.org/developers/x264.html))
+1. Compile the x264 plugin from source (downloadable from [here](https://www.videolan.org/developers/x264.html){target="_blank"})
 2. Modify `.mk.defs` (for Mac/Linux) or `plugin2015.vcxproj` (for Windows) in `x264_encoder_plugin` to point to the location of x264 install path.
 3. From the `x264_encoder_plugin` folder, build the plugin via `make` on Mac/Linux, or using Visual Studio on Windows.
 

@@ -11,30 +11,49 @@ const getIssues = async () => {
     },
     params: {
       state: "open",
-      per_page: 30
+      per_page: 100
     }
   });
 
-  return response.data.filter(issue => !issue.labels.some(label => label.name === "Feature Request"));
+  return response.data;
 };
 
-const generateMarkdown = (issues) => {
-  // read the existing content
-  let oldContent = fs.readFileSync('docs/bugtracker.md', 'utf-8');
+const generateMarkdown = (issues, path, sortFunc) => {
+  let content = '';
 
-  // split it at the marker line and keep only the part before it
-  let marker = 'Here\'s a list of the **30 most recently reported** DaVinci Resolve bugs on our GitHub issues site:';
-  oldContent = oldContent.split(marker)[0];
+  // sort issues according to provided sort function
+  issues.sort(sortFunc);
 
-  let newContent = `${oldContent}${marker}\n\n`;
+  // select top 30
+  issues = issues.slice(0, 30);
 
   // build the new list
   for (const issue of issues) {
     const date = new Date(issue.created_at).toLocaleDateString("en-US", { day: 'numeric', month: 'long', year: 'numeric' });
-    newContent += `- [${issue.title} (${date})](${issue.html_url})\n`;
+    content += `- [${issue.title} (${date})](${issue.html_url}){target="_blank"}\n`;
   }
 
-  fs.writeFileSync('docs/bugtracker.md', newContent);
+  fs.writeFileSync(path, content);
 };
 
-getIssues().then(generateMarkdown);
+const sumReactions = issue => {
+  let total = 0;
+  total += issue.reactions['+1'] || 0;
+  total += issue.reactions['-1'] || 0;
+  total += issue.reactions['laugh'] || 0;
+  total += issue.reactions['hooray'] || 0;
+  total += issue.reactions['confused'] || 0;
+  total += issue.reactions['heart'] || 0;
+  total += issue.reactions['rocket'] || 0;
+  total += issue.reactions['eyes'] || 0;
+  return total;
+}
+
+getIssues().then(issues => {
+  const issuesFilteredByRecent = issues.filter(issue => issue.labels.length > 0 && !issue.labels.some(label => label.name === "Feature Request"));
+  const issuesFilteredByLatest = issuesFilteredByRecent.filter(issue => issue.labels.some(label => label.name === "DaVinci Resolve 18.5"));
+
+  generateMarkdown(issuesFilteredByRecent, 'docs/_includes/bugtracker-recent.md', (a, b) => new Date(b.created_at) - new Date(a.created_at));
+  generateMarkdown(issuesFilteredByLatest, 'docs/_includes/bugtracker-latest.md', (a, b) => new Date(b.created_at) - new Date(a.created_at));
+  generateMarkdown(issuesFilteredByRecent, 'docs/_includes/bugtracker-reactions.md', (a, b) => sumReactions(b) - sumReactions(a));
+});
