@@ -10,7 +10,7 @@
 +++ Safari
 1. In the top left corner of your screen, select **Safari** and then **Preferences** and then **General**.
 2. Next to **New windows open with** and **New tabs open with**, select **Homepage**.
-3. Next to **Homepage** enter: `https://fcp.cafe`.
+3. Next to **Homepage** enter: `https://resolve.cafe`.
 +++ Chrome
 1. In the top right corner of your computer's browser, click **More** icon and then **Settings**.
 2. Under **Appearance**, turn on **Show home button**.
