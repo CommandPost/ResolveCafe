@@ -110,7 +110,7 @@ Here's some of our products currently for sale on the Mac App Store:
 
 ---
 
-{{ include "latenites/gyroflow-toolbox" }}
+{{ include "latenite/gyroflow-toolbox" }}
 
 ---
 
