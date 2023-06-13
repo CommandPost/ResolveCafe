@@ -96,7 +96,7 @@ glob(newsDir + '/*.md', function(err, files) {
                 content = content.replace(/{{ include ".*" }}/g, '')
                     .replace(/\!\[([^\]]*)\]\(([^)]*)\)/g, (match, alt, src) => {
                         if (src.startsWith('../')) {
-                            src = `https://fcp.cafe/${src.substring(3)}`;
+                            src = `https://resolve.cafe/${src.substring(3)}`;
                         }
                         return `<img src="${src}" alt="${alt}">`;
                     })
@@ -139,6 +139,6 @@ if (isContentChanged) {
     const newLastBuildDate = new Date().toUTCString();
     newXMLContent = newXMLContent.replace(/<lastBuildDate>.*<\/lastBuildDate>/, `<lastBuildDate>${newLastBuildDate}</lastBuildDate>`);
     newXMLContent = newXMLContent.replace(/{target=&quot;_blank&quot;}/g, '');
-    newXMLContent = newXMLContent.replace(/\.\.\/static\//g, 'https://fcp.cafe/static/');
+    newXMLContent = newXMLContent.replace(/\.\.\/static\//g, 'https://resolve.cafe/static/');
     fs.writeFileSync('docs/rss.xml', newXMLContent);
 }
