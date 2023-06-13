@@ -17,7 +17,3 @@ A place for all postproduction professionals, enthusiasts and anyone who wants t
 Run by the amazing [Felipe Baez](https://cre8ivebeast.com){target="_blank"}.
 
 [postchat.io](https://postchat.io){target="_blank"}
-
----
-
-{{ include "giscus.md" }}

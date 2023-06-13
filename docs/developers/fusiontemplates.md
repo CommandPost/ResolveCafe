@@ -150,7 +150,3 @@ It is also possible to import template files by opening the Fusion page Effects 
 ### DRFX Bundles
 
 As of 17.2, multiple templates may now be bundled together in .drfx files, which are ordinary zip files with a renamed extension (plain .zip files are supported too, with different naming in the UI). These may be organised into subfolders within the zip, if desired, and can also include icons for each template, and any associated assets, for ease of distribution and installation of one or more templates in a single file.
-
----
-
-{{ include "giscus.md" }}

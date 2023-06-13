@@ -13,9 +13,5 @@ We're big fans of [Ripple Training](https://www.rippletraining.com){target="_bla
 ---
 
 !!!
-Want to contribute? [Learn more here!](https://resolve.cafe/contribute/){target="_blank"}
+Want to contribute? [Learn more here!](../contribute/)
 !!!
-
----
-
-{{ include "giscus.md" }}

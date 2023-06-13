@@ -67,7 +67,3 @@ To activate the plugin in Resolve, copy 'x264_encoder_plugin.dvcp.bundle' folder
 * Windows: `%ProgramData%\Blackmagic Design\DaVinci Resolve\Support\IOPlugins`
 
 Once the plugin folder is installed, start Resolve and create a timeline with clips. Go to the Deliver page. In the format list, the list of containers supported by the plugin should show up. If a plugin supported container format (or QuickTime) is chosen, codecs supported by the plugin should be visible in the codecs list. Upon selecting the plugin codec, the corresponding UI widgets will be shown in the render settings.
-
----
-
-{{ include "giscus.md" }}

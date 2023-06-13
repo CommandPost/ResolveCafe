@@ -15,9 +15,5 @@ In the years that followed, DaVinci Resolve continued to enhance and expand its 
 ---
 
 !!!
-Want to contribute? [Learn more here!](https://resolve.cafe/contribute/){target="_blank"}
+Want to contribute? [Learn more here!](../contribute/)
 !!!
-
----
-
-{{ include "giscus.md" }}

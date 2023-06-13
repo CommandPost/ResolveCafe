@@ -13,9 +13,5 @@ You can learn more [here](https://julien.chichignoud.com/resolve-script-scaling-
 ---
 
 !!!
-Want to contribute? [Learn more here!](https://resolve.cafe/contribute/){target="_blank"}
+Want to contribute? [Learn more here!](../contribute/)
 !!!
-
----
-
-{{ include "giscus.md" }}

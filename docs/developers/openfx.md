@@ -84,7 +84,3 @@ For the `[PluginName]Factory` class, there are three virtual methods (`describe`
 Finally, `OFX::Plugin::getPluginIDs()` is required to register the plugin.
 
 For CUDA implementation, the plugin can operate on the cudaStream provided by the host and call `p_Desc.setSupportsCudaStream(true)` in `[PluginName]Factory::describe()`. If the plugin uses the default cudaStream or a stream created internally, it should set `p_Desc.setSupportsCudaStream(false)` and also perform synchronisation so that the GPU output buffers are ready when the plugin returns from the render call.
-
----
-
-{{ include "giscus.md" }}

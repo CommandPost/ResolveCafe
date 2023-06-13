@@ -573,7 +573,3 @@ Resolve 17.0
     - Introduce _ceilf() and _floorf() functions which implicitly cast the input value to floating-point value and return floating-point result.
       Older version DCTL that uses deprecated _ceil() and _floor() functions are required to explicitly cast the input type to floating-point.
     - Support inline CUBE LUTs.
-
----
-
-{{ include "giscus.md" }}
