@@ -1,0 +1,1 @@
+<img class="rightLogo" src="https://resolve.cafe/static/resolvecafe.png" align="right" style="width: 100px !important; height: 100px !important;" />

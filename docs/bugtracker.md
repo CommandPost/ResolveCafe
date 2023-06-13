@@ -4,6 +4,8 @@ This page is dedicated to keeping track of the latest DaVinci Resolve bugs and i
 
 We keep track of these bugs via our [GitHub issues site](https://github.com/CommandPost/ResolveCafe/issues){target="_blank"}.
 
+[GitHub](https://github.com){target="_blank"} is a **safe and secure** developers platform used by **over 73 million users** worldwide.
+
 To submit a new bug report, simply sign up for a free GitHub account and post an issue [here](https://github.com/CommandPost/ResolveCafe/issues){target="_blank"}.
 
 In general, whenever posting a new bug/issue to GitHub, we also submit feedback to the [Blackmagic Design Forums](https://forum.blackmagicdesign.com/viewforum.php?f=21&sid=f22b8d91290f36eb3cd987459d49f572){target="_blank"}.
@@ -41,7 +43,7 @@ The above list is pulled from our [GitHub issues site](https://github.com/Comman
 ---
 
 !!!
-Want to contribute? [Learn more here!](https://resolve.cafe/contribute/){target="_blank"}
+Want to contribute? [Learn more here!](/contribute/)
 !!!
 
 ---

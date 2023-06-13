@@ -1,16 +1,24 @@
 # Privacy Policy
 
-The Resolve Cafe website does not use cookies.
+**Last Updated:** Tuesday 13th June 2023
+
+Resolve Cafe does not use cookies on its website.
 
 We do not collect any personal identifiable information from you when you visit our Website.
 
-When embedding YouTube videos, we always enable the "privacy-enhanced mode" to prevent YouTube from using cookies.
+We don't embed any videos - we only show a thumbnail which links to the video - to prevent third party cookies/trackers.
 
 We use [GitHub Pages](https://pages.github.com){target="_blank"} to host and manage this website.
 
-We use [GitHub Issues](https://github.com/CommandPost/ResolveCafe/issues){target="_blank"} to manage our [Bug Tracker](https://resolve.cafe/bugtracker/){target="_blank"} & [Wish List](https://resolve.cafe/wishlist/){target="_blank"}.
+We use [CloudFlare](https://www.cloudflare.com){target="_blank"} for DNS hosting, and [VentraIP](https://ventraip.com.au) for domain hosting.
+
+You can read CloudFlare's privacy policy [here](https://www.cloudflare.com/en-au/privacypolicy/){target="_blank"}.
+
+We use [GitHub Issues](https://github.com/CommandPost/ResolveCafe/issues){target="_blank"} to manage our [Bug Tracker](/bugtracker/) & [Wish List](/wishlist/).
 
 We use [GitHub Discussions](https://github.com/CommandPost/ResolveCafe/discussions){target="_blank"} to manage the comments and discussions on the site.
+
+The comments feature at the bottom of every page is powered by [giscus](https://giscus.vercel.app){target="_blank"}, which also has no tracking or database.
 
 You can read GitHub's Privacy Statement [here](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement){target="_blank"}.
 
@@ -28,7 +36,7 @@ The security of your Personal Information is important to us, but remember that 
 
 ### Links to other sites
 
-Our Website may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
+Resolve Cafe contains links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
 
 We have no control over, and assume no responsibility for the content, privacy policies or practices of any third-party sites or services.
 
@@ -45,7 +53,3 @@ You can check the change history of this privacy policy [here](https://github.co
 ### Questions?
 
 Please contact us with any questions: [support@latenitefilms.com](mailto:support@latenitefilms.com?subject=ResolveCafe)
-
----
-
-{{ include "giscus.md" }}
