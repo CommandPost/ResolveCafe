@@ -1,1 +1,1 @@
-[!button text="Discuss this news item" target="blank" variant="info"](https://github.com/CommandPost/FCPCafe/discussions)
+[!button text="Discuss this news item" target="blank" variant="info"](https://github.com/CommandPost/ResolveCafe/discussions)
