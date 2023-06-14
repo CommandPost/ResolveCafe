@@ -177,7 +177,7 @@ You can find it [here](https://github.com/CommandPost/ResolveCafe/tree/main/docs
 
 ### GitHub Desktop
 
-You can also use GitHub Desktop to essentially "clone" the entire FCP Cafe website to your local machine.
+You can also use GitHub Desktop to essentially "clone" the entire Resolve Cafe website to your local machine.
 
 You can then make changes locally, and once done, submit a pull request back to the main GitHub repository.
 
