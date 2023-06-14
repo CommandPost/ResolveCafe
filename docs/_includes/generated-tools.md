@@ -101,6 +101,15 @@
 
 ---
 
+## R
+
+{{ include "tools/reactor" }}
+
+---
+
+
+---
+
 ## S
 
 {{ include "tools/scaling-fix" }}
@@ -108,6 +117,10 @@
 ---
 
 {{ include "tools/scopebox" }}
+
+---
+
+{{ include "tools/shutter-encoder" }}
 
 ---
 
