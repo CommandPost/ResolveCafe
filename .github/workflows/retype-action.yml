@@ -108,7 +108,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install rss markdown-it feedparser-promised deep-equal glob
+        run: npm install rss markdown-it feedparser-promised deep-equal glob cheerio
 
       - name: Generate RSS Feed
         run: node .github/scripts/generate-rss.js || echo "An error occurred. See the stack trace above for more details."
