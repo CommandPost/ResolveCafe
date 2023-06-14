@@ -4,6 +4,9 @@ const RSS = require('rss');
 const MarkdownIt = require('markdown-it');
 const cheerio = require('cheerio');
 
+const siteTitle = 'Resolve Cafe';
+const siteUrl = 'https://resolve.cafe';
+
 const md = new MarkdownIt({html: true});
 
 function convertDateToRFC822(dateString) {
@@ -13,7 +16,7 @@ function convertDateToRFC822(dateString) {
 }
 
 function generateUrl(title) {
-    return 'https://resolve.cafe/#' + title.toLowerCase().replace(/ /g, '-');
+    return `${siteUrl}/#${title.toLowerCase().replace(/ /g, '-')}`;
 }
 
 function entriesAreEqual(entry1, entry2) {
@@ -40,11 +43,11 @@ if (fs.existsSync('docs/rss.xml')) {
 }
 
 const feed = new RSS({
-    title: 'Resolve Cafe',
-    description: 'Latest News from Resolve Cafe',
-    feed_url: 'https://resolve.cafe/rss.xml',
-    site_url: 'https://resolve.cafe',
-    generator: 'Resolve Cafe',
+    title: siteTitle,
+    description: `Latest News from ${siteTitle}`,
+    feed_url: `${siteUrl}/rss.xml`,
+    site_url: siteUrl,
+    generator: siteTitle,
     pubDate: oldFeedItems.length > 0 ? oldFeedItems[0].date : new Date(),
 });
 

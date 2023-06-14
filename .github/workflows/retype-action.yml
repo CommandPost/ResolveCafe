@@ -117,7 +117,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git stash
           git pull --rebase origin main
+          git stash pop
           if git diff --exit-code --quiet docs/rss.xml; then
             echo "No changes to commit"
           else
