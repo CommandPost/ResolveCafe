@@ -1,5 +1,5 @@
 !!!info Sponsored
-_Tight. Terse. Terrific. Bim. Bam. Boom._ – Cut/daily reader<br />
-Post Production insight delivered to your inbox.<br />
-Sign up for **free** at [Cut/daily.com](https://www.cut-daily.com){target="_blank"}
+**DaVinci Resolve Studio Scaling Fix:**<br />
+Fix Scaling issues in DaVinci Resolve Studio for FCPX and Premiere sequences imported via XML and FCPXML.<br />
+[Download Now!](https://julien.chichignoud.com/resolve-script-scaling-fix){target="_blank"}
 !!!

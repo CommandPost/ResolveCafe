@@ -1,11 +1,13 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const RSS = require('rss');
 const MarkdownIt = require('markdown-it');
 const FeedParser = require('feedparser');
-const glob = require('glob').glob;
+const glob = require('glob');
+const util = require('util');
 
 const md = new MarkdownIt({html: true});
+const globPromise = util.promisify(glob);
 
 function convertDateToRFC822(dateString) {
     dateString = dateString.replace(/\b(\d+)(st|nd|rd|th)\b/g, "$1");
@@ -19,126 +21,142 @@ function generateUrl(title) {
 
 function entriesAreEqual(entry1, entry2) {
     return entry1.title === entry2.title &&
-           entry1.guid === entry2.guid &&
-           entry1.description === entry2.description &&
-           entry1.url === entry2.url;
+        entry1.guid === entry2.guid &&
+        entry1.description === entry2.description &&
+        entry1.url === entry2.url;
 }
 
 let pubDate = null;
 let lastBuildDate = null;
 let isContentChanged = false;
-let oldFeedItems = [];
 
-if (fs.existsSync('docs/rss.xml')) {
-    const feedparser = new FeedParser();
-
-    fs.createReadStream('docs/rss.xml').pipe(feedparser);
-
-    feedparser.on('meta', function(meta) {
-        pubDate = meta.pubdate || new Date();
-        lastBuildDate = meta.date || new Date();
-    });
-
-    feedparser.on('readable', function() {
-        let post;
-        while (post = this.read()) {
-            oldFeedItems.push(post);
+async function getOldFeedItems() {
+    return new Promise((resolve, reject) => {
+        if (!fs.existsSync('docs/rss.xml')) {
+            resolve([]);
+            return;
         }
-    });
-}
 
-const feed = new RSS({
-    title: 'Resolve Cafe',
-    description: 'Latest News from Resolve Cafe',
-    feed_url: 'https://resolve.cafe/rss.xml',
-    site_url: 'https://resolve.cafe',
-    generator: 'Resolve Cafe',
-    pubDate: pubDate,
-});
+        const feedparser = new FeedParser();
+        const oldFeedItems = [];
 
-const newsDir = path.join(__dirname, 'docs/_includes/news');
+        fs.createReadStream('docs/rss.xml').pipe(feedparser);
 
-// Find all markdown files in newsDir
-glob(newsDir + '/*.md', function(err, files) {
-    if (err) {
-        console.error(err);
-        return;
-    }
+        feedparser.on('meta', function(meta) {
+            pubDate = meta.pubdate || new Date();
+            lastBuildDate = meta.date || new Date();
+        });
 
-    for (const file of files) {
-        fs.readFile(file, 'utf8', function(err, data) {
-            if (err) {
-                console.error(err);
-                return;
-            }
-
-            const entries = data.split('\n---\n');
-            let currentTitle = '';
-            let currentDate = '';
-
-            for (const entry of entries) {
-                const lines = entry.trim().split('\n');
-
-                if (lines[0].startsWith('### ')) {
-                    currentTitle = lines[0].substring(4);
-                    currentDate = convertDateToRFC822(currentTitle);
-                    lines.shift();
-                }
-
-                if (lines.length === 0 || lines[0].startsWith('{{ include')) {
-                    continue;
-                }
-
-                let content = lines.join('\n').trim();
-
-                content = md.render(content);
-
-                content = content.replace(/{{ include ".*" }}/g, '')
-                    .replace(/\!\[([^\]]*)\]\(([^)]*)\)/g, (match, alt, src) => {
-                        if (src.startsWith('../')) {
-                            src = `https://resolve.cafe/${src.substring(3)}`;
-                        }
-                        return `<img src="${src}" alt="${alt}">`;
-                    })
-                    .replace(/\[\!button text="([^"]*)" target="([^"]*)" variant="([^"]*)"\]\(([^)]*)\)/g, '<a href="$4">$1</a>')
-                    .replace(/\{target="[^"]*"\}/g, '')
-                    .replace(/{target="_blank"}/g, '');
-
-                const url = generateUrl(currentTitle);
-
-                const newEntry = {
-                    title: currentTitle,
-                    guid: currentTitle,
-                    description: content,
-                    url: url,
-                    date: currentDate
-                };
-
-                const existingEntryIndex = oldFeedItems.findIndex(item => item.guid === newEntry.guid);
-
-                if (existingEntryIndex === -1 || !entriesAreEqual(oldFeedItems[existingEntryIndex], newEntry)) {
-                    isContentChanged = true;
-                    feed.item(newEntry);
-
-                    if (existingEntryIndex !== -1) {
-                        oldFeedItems.splice(existingEntryIndex, 1);
-                    }
-                }
+        feedparser.on('readable', function() {
+            let post;
+            while (post = this.read()) {
+                oldFeedItems.push(post);
             }
         });
+
+        feedparser.on('end', function() {
+            resolve(oldFeedItems);
+        });
+
+        feedparser.on('error', function(error) {
+            reject(error);
+        });
+    });
+}
+
+async function updateFeedWithNewItems(feed, oldFeedItems) {
+    const newsDir = path.join(__dirname, 'docs/_includes/news');
+    const files = await globPromise(newsDir + '/*.md');
+
+    for (const file of files) {
+        const data = await fs.readFile(file, 'utf8');
+
+        const entries = data.split('\n---\n');
+        let currentTitle = '';
+        let currentDate = '';
+
+        for (const entry of entries) {
+            const lines = entry.trim().split('\n');
+
+            if (lines[0].startsWith('### ')) {
+                currentTitle = lines[0].substring(4);
+                currentDate = convertDateToRFC822(currentTitle);
+                lines.shift();
+            }
+
+            if (lines.length === 0 || lines[0].startsWith('{{ include')) {
+                continue;
+            }
+
+            let content = lines.join('\n').trim();
+
+            content = md.render(content);
+
+            content = content.replace(/{{ include ".*" }}/g, '')
+                .replace(/\!\[([^\]]*)\]\(([^)]*)\)/g, (match, alt, src) => {
+                    if (src.startsWith('../')) {
+                        src = `https://resolve.cafe/${src.substring(3)}`;
+                    }
+                    return `<img src="${src}" alt="${alt}">`;
+                })
+                .replace(/\[\!button text="([^"]*)" target="([^"]*)" variant="([^"]*)"\]\(([^)]*)\)/g, '<a href="$4">$1</a>')
+                .replace(/\{target="[^"]*"\}/g, '')
+                .replace(/{target="[^"]*"}/g, '');
+
+            let url = generateUrl(currentTitle);
+
+            let newItem = {
+                title: currentTitle,
+                description: content,
+                url: url,
+                guid: url,
+                date: currentDate,
+            };
+
+            let isOldItem = false;
+
+            for (let oldItem of oldFeedItems) {
+                if (entriesAreEqual(newItem, oldItem)) {
+                    isOldItem = true;
+                    break;
+                }
+            }
+
+            if (!isOldItem) {
+                isContentChanged = true;
+                feed.item(newItem);
+            }
+        }
     }
-});
-
-// Add all items in oldFeedItems back into the feed
-for (const oldItem of oldFeedItems) {
-    feed.item(oldItem);
 }
 
-if (isContentChanged) {
-    let newXMLContent = feed.xml({indent: true});
-    const newLastBuildDate = new Date().toUTCString();
-    newXMLContent = newXMLContent.replace(/<lastBuildDate>.*<\/lastBuildDate>/, `<lastBuildDate>${newLastBuildDate}</lastBuildDate>`);
-    newXMLContent = newXMLContent.replace(/{target=&quot;_blank&quot;}/g, '');
-    newXMLContent = newXMLContent.replace(/\.\.\/static\//g, 'https://resolve.cafe/static/');
-    fs.writeFileSync('docs/rss.xml', newXMLContent);
-}
+(async function() {
+    try {
+        const feed = new RSS({
+            title: 'Resolve Cafe - Latest News',
+            description: 'The latest news from Resolve Cafe',
+            feed_url: 'https://resolve.cafe/rss.xml',
+            site_url: 'https://resolve.cafe',
+            image_url: 'https://resolve.cafe/assets/images/favicon.png',
+            managingEditor: 'Resolve Cafe',
+            webMaster: 'Resolve Cafe',
+            language: 'en',
+            pubDate: pubDate,
+            ttl: '60',
+        });
+
+        const oldFeedItems = await getOldFeedItems();
+
+        await updateFeedWithNewItems(feed, oldFeedItems);
+
+        if (isContentChanged) {
+            const xml = feed.xml({indent: true});
+            await fs.writeFile('docs/rss.xml', xml);
+            console.log('Updated rss.xml');
+        } else {
+            console.log('No change in rss.xml');
+        }
+    } catch (error) {
+        console.error(error);
+    }
+})();
