@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740035004198">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740036611803">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -21,21 +21,23 @@
     <meta property="og:url" content="https://resolve.cafe/developers/dctl/">
     <meta property="og:title" content="DaVinci Color Transform Language (DCTL)">
     <meta property="og:description" content="This documentation provides a quick reference and showcase of the DaVinci Color Transform Language (DCTL) - including the syntax, API and...">
+    <meta property="og:image" content="https://resolve.cafe/static/dctl.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://resolve.cafe/developers/dctl/">
     <meta property="twitter:title" content="DaVinci Color Transform Language (DCTL)">
     <meta property="twitter:description" content="This documentation provides a quick reference and showcase of the DaVinci Color Transform Language (DCTL) - including the syntax, API and...">
+    <meta property="twitter:image" content="https://resolve.cafe/static/dctl.jpg">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/favicon.ico" rel="icon" />
-    <link href="../../resources/css/retype.css?v=3.0.3.740035004198" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.3.740036611803" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740035004198" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.3.740036611803" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740035004198" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.3.740036611803" data-turbo-eval="false" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -329,10 +331,29 @@
 <p>In Resolve, DCTL effects can be run as a color LUT, using the DCTL OFX plugin or the Transition Plugin. DCTL effects are commonly saved as a plain text .dctl files, but if needed, developers can further save an encrypted effect as a .dctle file for distribution. See Encryption under Types of DCTLs.</p>
 <p>For simplicity, the document uses the term &quot;a DCTL&quot; to refer to a logical unit (a program or function or an effect) and the more generic &quot;DCTL&quot; or &quot;DCTL code&quot; to refer to the language and syntax.</p>
 <hr />
+<doc-anchor-target id="videos">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#videos">#</doc-anchor-trigger>
+        <span>Videos</span>
+    </h3>
+</doc-anchor-target>
+<p><a href="https://www.youtube.com/watch?v=1BtydnVhk14" target="_blank"><img src="../../static/dctl.jpg" alt="" /></a></p>
+<hr />
+<doc-anchor-target id="download-dctls">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#download-dctls">#</doc-anchor-trigger>
+        <span>Download DCTLs</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Paul Dore has a great collection of DCTLs <a href="https://github.com/baldavenger/DCTLs" target="_blank">here</a></li>
+<li><a href="https://github.com/xtremestuff/protune-transforms" target="_blank">GoPro Protune Transforms</a></li>
+</ul>
+<hr />
 <doc-anchor-target id="types-of-dctls">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#types-of-dctls">#</doc-anchor-trigger>
-        <span>Types of DCTLs:</span>
+        <span>Types of DCTLs</span>
     </h3>
 </doc-anchor-target>
 <p>There are two main types of DCTLs:
@@ -360,7 +381,7 @@ The DCTL transition plugin is used in the same way as any other transition plugi
 <doc-anchor-target id="dctl-syntax">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#dctl-syntax">#</doc-anchor-trigger>
-        <span>DCTL Syntax:</span>
+        <span>DCTL Syntax</span>
     </h3>
 </doc-anchor-target>
 <p>DCTL is similar to C in syntax, and uses base C types - int, float, char*, pointer etc. Some familiarity with C programming language terminology is helpful when reading this documentation.</p>
@@ -393,7 +414,7 @@ The utility functions make_float2(float,float), make_float3(float,float,float) a
 <doc-anchor-target id="the-main-entry-function">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#the-main-entry-function">#</doc-anchor-trigger>
-        <span>The Main Entry Function:</span>
+        <span>The Main Entry Function</span>
     </h3>
 </doc-anchor-target>
 <p>Each DCTL file must use a single main entry function called &#x27;transform()&#x27; or &#x27;transition()&#x27;, with the function signatures shown below.
@@ -444,7 +465,7 @@ The transition function returns a float4 (RGBA) value for each pixel at the coor
 <doc-anchor-target id="defining-and-using-luts">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#defining-and-using-luts">#</doc-anchor-trigger>
-        <span>Defining and Using LUTs:</span>
+        <span>Defining and Using LUTs</span>
     </h3>
 </doc-anchor-target>
 <p>Look Up Tables (LUTs) can be referenced from external files, and applied using the DEFINE_LUT and APPLY_LUT functions.</p>
