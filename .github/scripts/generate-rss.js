@@ -3,7 +3,7 @@ const path = require('path');
 const RSS = require('rss');
 const MarkdownIt = require('markdown-it');
 const cheerio = require('cheerio');
-const glob = require('glob');
+
 const md = new MarkdownIt({html: true});
 
 function convertDateToRFC822(dateString) {
@@ -51,11 +51,11 @@ const feed = new RSS({
 const newsDir = path.join(__dirname, 'docs/_includes/news');
 
 // Find all markdown files in newsDir
-const files = glob.sync(newsDir + '/*.md');
+const files = fs.readdirSync(newsDir).filter(fn => fn.endsWith('.md'));
 let isContentChanged = false;
 
 for (const file of files) {
-    const data = fs.readFileSync(file, 'utf8');
+    const data = fs.readFileSync(path.join(newsDir, file), 'utf8');
 
     const entries = data.split('\n---\n');
     let currentTitle = '';
