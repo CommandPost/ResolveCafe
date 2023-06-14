@@ -1,13 +1,10 @@
-const fs = require('fs').promises;
+const fs = require('fs');
 const path = require('path');
 const RSS = require('rss');
 const MarkdownIt = require('markdown-it');
-const FeedParser = require('feedparser');
+const FeedParser = require('feedparser-promised');
 const glob = require('glob');
-const util = require('util');
-
 const md = new MarkdownIt({html: true});
-const globPromise = util.promisify(glob);
 
 function convertDateToRFC822(dateString) {
     dateString = dateString.replace(/\b(\d+)(st|nd|rd|th)\b/g, "$1");
@@ -16,60 +13,43 @@ function convertDateToRFC822(dateString) {
 }
 
 function generateUrl(title) {
-    return 'https://resolve.cafe/#' + title.toLowerCase().replace(/ /g, '-');
+    return 'https://fcp.cafe/#' + title.toLowerCase().replace(/ /g, '-');
 }
 
 function entriesAreEqual(entry1, entry2) {
     return entry1.title === entry2.title &&
-        entry1.guid === entry2.guid &&
-        entry1.description === entry2.description &&
-        entry1.url === entry2.url;
+           entry1.guid === entry2.guid &&
+           entry1.description === entry2.description &&
+           entry1.url === entry2.url;
 }
 
-let pubDate = null;
-let lastBuildDate = null;
-let isContentChanged = false;
+const feedparser = new FeedParser();
+const oldFeedItems = [];
+const filePath = path.resolve('docs/rss.xml');
+const fileContent = fs.readFileSync(filePath).toString();
+const newsDir = path.join(__dirname, 'docs/_includes/news');
 
-async function getOldFeedItems() {
-    return new Promise((resolve, reject) => {
-        if (!fs.existsSync('docs/rss.xml')) {
-            resolve([]);
-            return;
-        }
-
-        const feedparser = new FeedParser();
-        const oldFeedItems = [];
-
-        fs.createReadStream('docs/rss.xml').pipe(feedparser);
-
-        feedparser.on('meta', function(meta) {
-            pubDate = meta.pubdate || new Date();
-            lastBuildDate = meta.date || new Date();
-        });
-
-        feedparser.on('readable', function() {
-            let post;
-            while (post = this.read()) {
-                oldFeedItems.push(post);
-            }
-        });
-
-        feedparser.on('end', function() {
-            resolve(oldFeedItems);
-        });
-
-        feedparser.on('error', function(error) {
-            reject(error);
-        });
+feedparser.parseString(fileContent).then(items => {
+    items.forEach(item => {
+        oldFeedItems.push(item);
     });
-}
 
-async function updateFeedWithNewItems(feed, oldFeedItems) {
-    const newsDir = path.join(__dirname, 'docs/_includes/news');
-    const files = await globPromise(newsDir + '/*.md');
+    const feed = new RSS({
+        title: 'FCP Cafe',
+        description: 'Latest News from FCP Cafe',
+        feed_url: 'https://fcp.cafe/rss.xml',
+        site_url: 'https://fcp.cafe',
+        generator: 'FCP Cafe',
+        pubDate: items[0].pubdate
+    });
+
+    let isContentChanged = false;
+
+    // Find all markdown files in newsDir
+    const files = glob.sync(newsDir + '/*.md');
 
     for (const file of files) {
-        const data = await fs.readFile(file, 'utf8');
+        const data = fs.readFileSync(file, 'utf8');
 
         const entries = data.split('\n---\n');
         let currentTitle = '';
@@ -95,68 +75,44 @@ async function updateFeedWithNewItems(feed, oldFeedItems) {
             content = content.replace(/{{ include ".*" }}/g, '')
                 .replace(/\!\[([^\]]*)\]\(([^)]*)\)/g, (match, alt, src) => {
                     if (src.startsWith('../')) {
-                        src = `https://resolve.cafe/${src.substring(3)}`;
+                        src = `https://fcp.cafe/${src.substring(3)}`;
                     }
                     return `<img src="${src}" alt="${alt}">`;
                 })
                 .replace(/\[\!button text="([^"]*)" target="([^"]*)" variant="([^"]*)"\]\(([^)]*)\)/g, '<a href="$4">$1</a>')
                 .replace(/\{target="[^"]*"\}/g, '')
-                .replace(/{target="[^"]*"}/g, '');
+                .replace(/{target="_blank"}/g, '');
 
-            let url = generateUrl(currentTitle);
+            const url = generateUrl(currentTitle);
 
-            let newItem = {
+            const newEntry = {
                 title: currentTitle,
+                guid: currentTitle,
                 description: content,
                 url: url,
-                guid: url,
-                date: currentDate,
+                date: currentDate
             };
 
-            let isOldItem = false;
+            const existingEntryIndex = oldFeedItems.findIndex(item => item.guid === newEntry.guid);
 
-            for (let oldItem of oldFeedItems) {
-                if (entriesAreEqual(newItem, oldItem)) {
-                    isOldItem = true;
-                    break;
+            if (existingEntryIndex === -1 || !entriesAreEqual(oldFeedItems[existingEntryIndex], newEntry)) {
+                isContentChanged = true;
+                feed.item(newEntry);
+
+                if (existingEntryIndex !== -1) {
+                    oldFeedItems.splice(existingEntryIndex, 1);
                 }
             }
-
-            if (!isOldItem) {
-                isContentChanged = true;
-                feed.item(newItem);
-            }
         }
     }
-}
 
-(async function() {
-    try {
-        const feed = new RSS({
-            title: 'Resolve Cafe - Latest News',
-            description: 'The latest news from Resolve Cafe',
-            feed_url: 'https://resolve.cafe/rss.xml',
-            site_url: 'https://resolve.cafe',
-            image_url: 'https://resolve.cafe/assets/images/favicon.png',
-            managingEditor: 'Resolve Cafe',
-            webMaster: 'Resolve Cafe',
-            language: 'en',
-            pubDate: pubDate,
-            ttl: '60',
-        });
-
-        const oldFeedItems = await getOldFeedItems();
-
-        await updateFeedWithNewItems(feed, oldFeedItems);
-
-        if (isContentChanged) {
-            const xml = feed.xml({indent: true});
-            await fs.writeFile('docs/rss.xml', xml);
-            console.log('Updated rss.xml');
-        } else {
-            console.log('No change in rss.xml');
-        }
-    } catch (error) {
-        console.error(error);
+    // Write to file only if content has changed
+    if (isContentChanged) {
+        let newXMLContent = feed.xml({indent: true});
+        const newLastBuildDate = new Date().toUTCString();
+        newXMLContent = newXMLContent.replace(/<lastBuildDate>.*<\/lastBuildDate>/, `<lastBuildDate>${newLastBuildDate}</lastBuildDate>`);
+        newXMLContent = newXMLContent.replace(/{target=&quot;_blank&quot;}/g, '');
+        newXMLContent = newXMLContent.replace(/\.\.\/static\//g, 'https://fcp.cafe/static/');
+        fs.writeFileSync('docs/rss.xml', newXMLContent);
     }
-})();
+});
