@@ -60,6 +60,27 @@ So, in simple terms, **a pull request is a way of proposing changes to a shared 
 
 ---
 
+### Navigating GitHub
+
+To create the fastest website possible, Resolve Cafe is what's called a "static site". It just a collection of HTML files in a folder - nothing fancy.
+
+However, to make sure the website is super easy to update and improve, we use [GitHub Actions](https://github.com/features/actions){target="_blank"} to "do stuff" to our markdown files whenever we submit a pull request.
+
+For example, each time you make a pull request, our [fancy GitHub Action](https://github.com/CommandPost/ResolveCafe/blob/main/.github/workflows/retype-action.yml){target="_blank"} does the following:
+
+- Looks at all the individual **Asset Management** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/asset-management){target="_blank"}, and generates an alphabetical list of them for the [Asset Management](/ecosystem/asset-management/) page.
+- Looks at all the individual **FAQ** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/faq){target="_blank"}, and generates an alphabetical list of them for the [FAQ](/faq/) page.
+- Looks at all the individual **Fusion Templates** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/fusion-templates){target="_blank"}, and generates an alphabetical list of them for the [Fusion Templates](/motiontemplates/) page.
+- Looks at all the individual **News** items in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/news){target="_blank"}, and generates an alphabetical list of them for the [Latest News](/) page.
+- Looks at all the individual **Plugins** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/plugins){target="_blank"}, and generates an alphabetical list of them for the [Plugins](/ecosystem/plugins/) page.
+- Looks at all the individual **Sponsors** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/sponsors){target="_blank"}, and uses them on the [Latest News](/) page.
+- Looks at all the individual **Tools** in [this folder](https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/tools){target="_blank"}, and generates an alphabetical list of them for the [Tools](/tools/) page.
+- Looks at all the **Latest News** items and generates an [RSS feed](/rss.xml){target="_blank"}
+
+This means, if you want to add a Tool, Fusion Template, or News Item, you can just add a new markdown file in that folder, and once the pull request is approved, everything will be updated automagically.
+
+---
+
 ### How to Edit Pages
 
 If you're not already registered with GitHub, [create a free account](https://github.com/join){target="_blank"}.
