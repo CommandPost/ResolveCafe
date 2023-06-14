@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+const { PAGE_NAME } = process.env;
 
-const directoryPath = path.join(process.env.GITHUB_WORKSPACE, 'docs/_includes/fusion-templates');
-const outputFile = path.join(process.env.GITHUB_WORKSPACE, 'docs/_includes/generated-fusion-templates.md');
+const directoryPath = path.join(process.env.GITHUB_WORKSPACE, `docs/_includes/${PAGE_NAME}`);
+const outputFile = path.join(process.env.GITHUB_WORKSPACE, `docs/_includes/generated-${PAGE_NAME}.md`);
 
 try {
     fs.readdir(directoryPath, function (err, files) {
@@ -28,7 +29,7 @@ try {
 
             // If current initial is different from last initial, then add a new section
             if (currentInitial !== lastInitial) {
-                // Don't add '---' for the first section
+                // Add '---' for the new section except the first
                 if (lastInitial !== '') {
                     fileContent += '\n---\n\n';
                 }
@@ -37,11 +38,11 @@ try {
                 lastInitial = currentInitial;
             }
 
-            fileContent += `{{ include "fusion-templates/${fileNameWithoutExtension}" }}\n\n---\n\n`;
+            fileContent += `{{ include "${PAGE_NAME}/${fileNameWithoutExtension}" }}\n\n`;
         });
 
         // Remove the last extra line and '---'
-        fileContent = fileContent.slice(0, -5);
+        fileContent = fileContent.slice(0, -2);
 
         // Write to the output file
         try {
