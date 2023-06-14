@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740022425100">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.3.740023577221">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.0.3">
@@ -33,11 +33,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../static/favicon.ico" rel="icon" />
-    <link href="../resources/css/retype.css?v=3.0.3.740022425100" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=3.0.3.740023577221" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.740022425100" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=3.0.3.740023577221" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=3.0.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.740022425100" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=3.0.3.740023577221" data-turbo-eval="false" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -385,6 +385,27 @@
 <p>A GitHub pull request is basically the same idea. When you&#x27;re working on a shared codebase, or &quot;project,&quot; you often work on your own copy, or &quot;branch&quot;. When you think your changes are ready to be added to the shared codebase, you make a &quot;pull request&quot;. This is a proposal that says &quot;I think these changes I made should be added to our shared project&quot;.</p>
 <p>Your teammates then can look over your changes, suggest edits, and finally, if they agree that your changes are good, they &quot;merge&quot; them into the shared project. This way, everyone keeps the code clean and organized, and you have a record of who added what and when.</p>
 <p>So, in simple terms, <strong>a pull request is a way of proposing changes to a shared project</strong> and allowing others to review and approve those changes before they&#x27;re added.</p>
+<hr />
+<doc-anchor-target id="navigating-github">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#navigating-github">#</doc-anchor-trigger>
+        <span>Navigating GitHub</span>
+    </h3>
+</doc-anchor-target>
+<p>To create the fastest website possible, Resolve Cafe is what&#x27;s called a &quot;static site&quot;. It just a collection of HTML files in a folder - nothing fancy.</p>
+<p>However, to make sure the website is super easy to update and improve, we use <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> to &quot;do stuff&quot; to our markdown files whenever we submit a pull request.</p>
+<p>For example, each time you make a pull request, our <a href="https://github.com/CommandPost/ResolveCafe/blob/main/.github/workflows/retype-action.yml" target="_blank">fancy GitHub Action</a> does the following:</p>
+<ul>
+<li>Looks at all the individual <strong>Asset Management</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/asset-management" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="/ecosystem/asset-management/">Asset Management</a> page.</li>
+<li>Looks at all the individual <strong>FAQ</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/faq" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="../faq/">FAQ</a> page.</li>
+<li>Looks at all the individual <strong>Fusion Templates</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/fusion-templates" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="/motiontemplates/">Fusion Templates</a> page.</li>
+<li>Looks at all the individual <strong>News</strong> items in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/news" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="../">Latest News</a> page.</li>
+<li>Looks at all the individual <strong>Plugins</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/plugins" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="../ecosystem/plugins/">Plugins</a> page.</li>
+<li>Looks at all the individual <strong>Sponsors</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/sponsors" target="_blank">this folder</a>, and uses them on the <a href="../">Latest News</a> page.</li>
+<li>Looks at all the individual <strong>Tools</strong> in <a href="https://github.com/CommandPost/ResolveCafe/tree/main/docs/_includes/tools" target="_blank">this folder</a>, and generates an alphabetical list of them for the <a href="/tools/">Tools</a> page.</li>
+<li>Looks at all the <strong>Latest News</strong> items and generates an <a href="../rss.xml" target="_blank">RSS feed</a></li>
+</ul>
+<p>This means, if you want to add a Tool, Fusion Template, or News Item, you can just add a new markdown file in that folder, and once the pull request is approved, everything will be updated automagically.</p>
 <hr />
 <doc-anchor-target id="how-to-edit-pages">
     <h3>
