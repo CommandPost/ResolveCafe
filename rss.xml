@@ -1,10 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[FCP Cafe]]></title>
+        <title><![CDATA[Resolve Cafe]]></title>
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Wed, 07 Jun 2023 01:02:23 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jun 2023 01:15:00 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 14 Jun 2023 01:15:00 GMT</pubDate>
+        <item>
+            <title><![CDATA[27th May 2023]]></title>
+            <description><![CDATA[<p>Hedge are on the lookout for passionate beta users to help shape the future of Hedge products (like <a href="https://hedge.video/hedge">Hedge</a>, <a href="https://hedge.video/postlab/benefits">PostLab</a> &amp; <a href="https://hedge.video/editready">EditReady</a>). If you think you have what it takes and would like to join, sign up <a href="http://bit.ly/HedgeBetaProgram">here</a>.</p>
+<p><a href="http://bit.ly/HedgeBetaProgram"><img src="/static/hedge.jpeg" alt=""></a></p>
+]]></description>
+            <link>https://resolve.cafe/#27th-may-2023</link>
+            <guid isPermaLink="false">27th May 2023</guid>
+            <pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[29th May 2023]]></title>
+            <description><![CDATA[<p>Chris at <a href="https://latenitefilms.com/technology/">LateNite</a> has updated the pricing for <a href="https://brawtoolbox.io">BRAW Toolbox</a>, <a href="https://gyroflowtoolbox.io">Gyroflow Toolbox</a> &amp; <a href="https://markertoolbox.io">Marker Toolbox</a>.</p>
+<ul>
+<li><strong><a href="https://brawtoolbox.io">BRAW Toolbox</a></strong> is now <strong>79.99</strong> in your local currency (i.e. <strong>AUD79.99</strong>, <strong>USD79.99</strong>, <strong>CAD79.99</strong>).</li>
+<li><strong><a href="https://markertoolbox.io">Marker Toolbox</a></strong> is now <strong>19.99</strong> in your local currency (i.e. <strong>AUD19.99</strong>, <strong>USD19.99</strong>, <strong>CAD19.99</strong>).</li>
+<li><strong><a href="https://gyroflowtoolbox.io">Gyroflow Toolbox</a></strong> is now <strong>4.99</strong> in your local currency (i.e. <strong>AUD4.99</strong>, <strong>USD4.99</strong>, <strong>CAD4.99</strong>).</li>
+</ul>
+<p>Their upcoming apps will have the same pricing model:</p>
+<ul>
+<li><strong><a href="https://recalltoolbox.io">Recall Toolbox</a></strong> is now <strong>29.99</strong> in your local currency (i.e. <strong>AUD29.99</strong>, <strong>USD29.99</strong>, <strong>CAD29.99</strong>).</li>
+<li><strong><a href="https://transfertoolbox.io">Transfer Toolbox</a></strong> is now <strong>4.99</strong> in your local currency (i.e. <strong>AUD4.99</strong>, <strong>USD4.99</strong>, <strong>CAD4.99</strong>).</li>
+</ul>
+<p>However, for example, if your country doesn't have an equivalent of 4.99 (i.e. Rp89,000 in Indonesia), it will default to a USD$4.99 equivalent.</p>
+<p>Transfer Toolbox is currently waiting for approval on the Mac App Store, but you can download from TestFlight.</p>
+<p>Recall Toolbox is currently on TestFlight, and will hopefully be submitted to the Mac App Store by the end of this week for review.</p>
+]]></description>
+            <link>https://resolve.cafe/#29th-may-2023</link>
+            <guid isPermaLink="false">29th May 2023</guid>
+            <pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[30th May 2023]]></title>
+            <description><![CDATA[<p>Following on from the interest in <a href="https://fcp.cafe">FCP Cafe</a>, Chris at <a href="https://latenitefilms.com/technology/">LateNite</a> has thrown together this site to be a new &quot;home page&quot; and community for professional editors using DaVinCi Resolve.</p>
+<p>We want this site to be:</p>
+<ul>
+<li><strong>Open:</strong> This site will remain open-source on GitHub for anyone to suggest pull requests</li>
+<li><strong>Up-to-date &amp; Relevant:</strong> We want this site to always be up-to-date and relevant</li>
+<li><strong>No bullshit:</strong> We want this site to be honest, truthful, useful and professional</li>
+<li><strong>Community Driven:</strong> This isn't our site, it's &quot;owned&quot; by the professional DaVinci Resolve Community</li>
+<li><strong>Modern:</strong> This site should work great on the latest browsers, including mobile</li>
+<li><strong>Fast &amp; Clean:</strong> This site should load quickly, and be easy to navigate</li>
+<li><strong>No analytics or user tracking:</strong> No cookies here!</li>
+</ul>
+<p>This is still very much a work-in-progress, and we'll be adding content gradually over the coming weeks and months.</p>
+]]></description>
+            <link>https://resolve.cafe/#30th-may-2023</link>
+            <guid isPermaLink="false">30th May 2023</guid>
+            <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[31st May 2023]]></title>
+            <description><![CDATA[<p><strong>Colourlab Ai</strong> is having a Spring Flash Sale! Up to 50% Off on Our Color Grading Software - Only 48 Hours Left!</p>
+<p>Spring is in the air, and so are the savings!</p>
+<p>Here's what's on offer:</p>
+<p><strong>Colourlab Ai Studio Annual License:</strong> Get a whopping 50% off on their Colourlab Ai Studio Annual License. This brings the cost of Colourlab Ai, Look Designer Plugin, and Grainlab Plugin down to just $249. That's less than the cost of a single plugin! Considering the combined value of all three applications is over $1000, this is a massive saving. Use the code <code>springstudio50</code> to take advantage of this offer.
+<strong>Look Designer Perpetual Licenses:</strong> Colourlab Ai is offering a 30% discount on their Look Designer Perpetual Licenses. This means you can own Look Designer forever for just $349. Look Designer 3.0 for Davinci and Premiere runs on both Mac and PC and is the perfect companion for creating X01 files, Look Design, Look Testing, EL Zones, and Full Color Management. Use the code <code>springlook30</code> to avail this offer.</p>
+<p>Buy Colourlab Ai Studio <a href="https://colourlab.ai/colourlab-ai-studio-2-yearly/">here</a>.</p>
+<p>Buy Look Designer Perpetual <a href="https://colourlab.ai/look-designer-resolve-perpetual/">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#31st-may-2023</link>
+            <guid isPermaLink="false">31st May 2023</guid>
+            <pubDate>Wed, 31 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[31st May 2023]]></title>
+            <description><![CDATA[<p>A new batch of nOb controllers is now available! You can order <a href="https://order.nobcontrol.com">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#31st-may-2023</link>
+            <guid isPermaLink="false">31st May 2023</guid>
+            <pubDate>Wed, 31 May 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[1st June 2023]]></title>
+            <description><![CDATA[<p><strong>Alteon.io</strong> has announced that <strong>Brian Meaney</strong> will now be their new Head of Product. He brings more than two decades of experience from Apple and Magic Leap. Brian will direct product development and UX for their entire ecosystem.</p>
+<p>You can learn more <a href="https://www.accesswire.com/viewarticle.aspx?id=758114">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#1st-june-2023</link>
+            <guid isPermaLink="false">1st June 2023</guid>
+            <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[3rd June 2023]]></title>
+            <description><![CDATA[<p>In this video series, Igor Riđanović will be demonstrating proof-of-concept OpenAI GPT and DaVinci Resolve integrations, starting with a virtual Resolve assistant.</p>
+<p>Imagine having all the information you need right at your fingertips within Resolve itself. No more switching between Facebook, Blackmagic Forum, or other platforms. Just ask your questions directly in Resolve.</p>
+<p>Igor would love to hear your thoughts on this integration. Are there other GPT AI use cases you'd like to see in Resolve?</p>
+<p><a href="https://www.youtube.com/watch?v=p9wJcn8mGGs"><img src="/static/resolve-chatgpt.jpg" alt=""></a></p>
+]]></description>
+            <link>https://resolve.cafe/#3rd-june-2023</link>
+            <guid isPermaLink="false">3rd June 2023</guid>
+            <pubDate>Sat, 03 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<h4>5th June 2023</h4>
+<p>It's a month old, but for those that might have missed it, there's an awesome YouTube video that showcases the Audio Design Desk v2.0 Beta.</p>
+<p>Audio Design Desk is to audio software what Pro Tools was to the tape machine. It’s an entirely new breed of Digital Audio Workstation that artists can play like an instrument, revolutionizing the process of adding music and sound effects to picture and cutting down what can typically be a full day project to just a few minutes. It comes bundled with 75,000 sounds embedded with patent-pending Sonic Intelligence™, using AI-assisted content creation tools to enable filmmakers, sound designers, composers, and creators to produce cinema-quality compositions at the speed of thought, giving them a level of creative control that is unmatched by any other software.</p>
+<p><a href="https://www.youtube.com/watch?v=fojw1YNmuUM"><img src="/static/add.jpg" alt=""></a></p>
+<p>You can learn more about Audio Design Desk <a href="/ecosystem/tools/#audio-design-desk">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#</link>
+            <guid isPermaLink="true">https://resolve.cafe/#</guid>
+        </item>
+        <item>
+            <title><![CDATA[6th June 2023]]></title>
+            <description><![CDATA[<p><strong>WWDC</strong> time!</p>
+<p>Here's a <a href="https://developer.apple.com/videos/play/wwdc2023/111486/">17 big &amp; little things at WWDC23</a>.</p>
+<p>Iain Anderson has also written <a href="https://www.provideocoalition.com/apple-vision-pro-revealed-at-wwdc/">Apple Vision Pro revealed at WWDC</a> over at <a href="https://www.provideocoalition.com">ProVideo Coalition</a>.</p>
+<p>Below are some of the relevant highlights for Final Cut Pro editors.</p>
+<p>First up, the new <strong>Mac Pro</strong>:</p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro.png" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro-pricing.png" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro-compare.png" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro-compare-2.png" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro-compare-3.png" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-macpro-pricing-aud.png" alt=""></p>
+<p>You can learn more about the new MacPro <a href="https://www.apple.com/newsroom/2023/06/apple-unveils-new-mac-studio-and-brings-apple-silicon-to-mac-pro/">here</a>.</p>
+<p>There's the new <strong>M2 Ultra</strong>.</p>
+<p><img src="https://fcp.cafe/static/wwdc23-m2ultra.png" alt=""></p>
+<p>You can learn more <a href="https://www.apple.com/newsroom/2023/06/apple-introduces-m2-ultra/">here</a>.</p>
+<p>There's the new <strong>15-inch MacBook Air</strong>:</p>
+<p><img src="https://fcp.cafe/static/wwdc23-macbook-air.jpg" alt=""></p>
+<p>You can learn more <a href="https://www.apple.com/au/newsroom/2023/06/apple-introduces-the-15-inch-macbook-air/">here</a>.</p>
+<p>There's the new <strong>macOS Sonoma</strong>:</p>
+<p><img src="https://fcp.cafe/static/wwdc23-macos.jpg" alt=""></p>
+<p>You can learn more <a href="https://www.apple.com/au/newsroom/2023/06/macos-sonoma-brings-new-capabilities-for-elevating-productivity-and-creativity/">here</a>.</p>
+<p>There's the new <strong>Vision Pro</strong>.</p>
+<p>It's <strong>USD$3499</strong> and &quot;available early next year in the U.S&quot;.</p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-1.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-2.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-3.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-4.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-5.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-6.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-7.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/wwdc23-vision-pro-8.jpeg" alt=""></p>
+<p>DaVinci Resolve will run on Vision Pro out-of-the-box. No word yet on Final Cut Pro support.</p>
+<p><img src="https://fcp.cafe/static/resolve-on-vision-pro.jpg" alt=""></p>
+<p>You can learn more about Vision Pro <a href="https://www.apple.com/au/newsroom/2023/06/introducing-apple-vision-pro/">here</a>.</p>
+<p>You can watch the entire WWDC Keynote <a href="https://www.apple.com/apple-events/event-stream/">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#6th-june-2023</link>
+            <guid isPermaLink="false">6th June 2023</guid>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[6th June 2023]]></title>
+            <description><![CDATA[<p><strong>NeoFinder 8.4.1</strong> is out now. This is a bugfix release that contains two fixes for the Smart Folders, and one fix when searching hierarchical keywords.</p>
+<p>NeoFinder 8.4.1 is another free update for all customers with a NeoFinder 8.x license.</p>
+<p>NeoFinder 8.x is a <a href="https://www.cdfinder.de/store.html">paid upgrade</a> for NeoFinder 6.x, NeoFinder 7.x, and CDFinder customers.</p>
+<p><img src="https://fcp.cafe/static/neofinder-8-4.jpeg" alt=""></p>
+<p>You can learn more <a href="/ecosystem/tools/#neofinder">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#6th-june-2023</link>
+            <guid isPermaLink="false">6th June 2023</guid>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[6th June 2023]]></title>
+            <description><![CDATA[<p>Purchase a Ninja V, Ninja V+, Shogun Connect, Sumo 19SE or Shogun Studio 2 before the end of June 2023 to receive a FREE Assimilate Play Pro Studio license worth US$299 when registering your product. Existing registered owners quality for an exclusive price of USD$99.</p>
+<p><img src="https://fcp.cafe/static/assimilate-play-pro-studio.jpg" alt=""></p>
+<p>You can learn more <a href="http://my.atomos.com">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#6th-june-2023</link>
+            <guid isPermaLink="false">6th June 2023</guid>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[6th June 2023]]></title>
+            <description><![CDATA[<p>Premiere Gal is giving away USD$10,000 worth of Video Gear!</p>
+<p><a href="https://www.youtube.com/watch?v=7nCISaCgVh4"><img src="/static/kelsey-promo.jpeg" alt=""></a></p>
+]]></description>
+            <link>https://resolve.cafe/#6th-june-2023</link>
+            <guid isPermaLink="false">6th June 2023</guid>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[8th June 2023]]></title>
+            <description><![CDATA[<p>Michael Kammes has written a great article on <a href="https://www.postperspective.com/emails/Shift/ppnews-Shift-230516.html">Empowering Creatives: The Future of Creativity and Collaboration in the M&amp;E Industry</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#8th-june-2023</link>
+            <guid isPermaLink="false">8th June 2023</guid>
+            <pubDate>Thu, 08 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[13th June 2023]]></title>
+            <description><![CDATA[<p>The amazing Philip Hodgetts from <a href="https://intelligentassistance.com">Intelligent Assistance</a> has written an excellent blog post on <strong>Generative AI Devalues Experience</strong> <a href="http://www.philiphodgetts.com/2023/06/generative-ai-devalues-experience/">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#13th-june-2023</link>
+            <guid isPermaLink="false">13th June 2023</guid>
+            <pubDate>Tue, 13 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[13th June 2023]]></title>
+            <description><![CDATA[<p>There's an interesting article over at arstechnica:</p>
+<ul>
+<li><a href="https://arstechnica.com/gadgets/2023/06/clearly-predatory-western-digital-sparks-panic-anger-for-age-shaming-hdds/">“Clearly predatory”: Western Digital sparks panic, anger for age-shaming HDDs</a></li>
+</ul>
+]]></description>
+            <link>https://resolve.cafe/#13th-june-2023</link>
+            <guid isPermaLink="false">13th June 2023</guid>
+            <pubDate>Tue, 13 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
     </channel>
 </rss>
