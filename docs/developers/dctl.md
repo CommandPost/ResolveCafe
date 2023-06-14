@@ -12,7 +12,20 @@ For simplicity, the document uses the term "a DCTL" to refer to a logical unit (
 
 ---
 
-### Types of DCTLs:
+### Videos
+
+[![](/static/dctl.jpg)](https://www.youtube.com/watch?v=1BtydnVhk14){target="_blank"}
+
+---
+
+### Download DCTLs
+
+- Paul Dore has a great collection of DCTLs [here](https://github.com/baldavenger/DCTLs){target="_blank"}
+- [GoPro Protune Transforms](https://github.com/xtremestuff/protune-transforms){target="_blank"}
+
+---
+
+### Types of DCTLs
 
 There are two main types of DCTLs:
     - A transform DCTL applies an effect to each frame of a single clip.
@@ -38,7 +51,7 @@ To encrypt a DCTL: From the LUT browser, select the desired .dctl file, open con
 
 ---
 
-### DCTL Syntax:
+### DCTL Syntax
 
 DCTL is similar to C in syntax, and uses base C types - int, float, char*, pointer etc. Some familiarity with C programming language terminology is helpful when reading this documentation.
 
@@ -72,7 +85,7 @@ The DCTL programming environment also allows read-only access to multiple global
 
 ---
 
-### The Main Entry Function:
+### The Main Entry Function
 
 Each DCTL file must use a single main entry function called 'transform()' or 'transition()', with the function signatures shown below.
 NOTE: Use the function definition below exactly as-is - including parameter types and names.
@@ -127,7 +140,7 @@ Once included, the functions in this header file can now be referenced and used 
 
 ---
 
-### Defining and Using LUTs:
+### Defining and Using LUTs
 
 Look Up Tables (LUTs) can be referenced from external files, and applied using the DEFINE_LUT and APPLY_LUT functions.
 
