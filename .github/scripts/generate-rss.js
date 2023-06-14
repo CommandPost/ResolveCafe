@@ -23,8 +23,23 @@ function entriesAreEqual(entry1, entry2) {
            entry1.url === entry2.url;
 }
 
-const feedparser = new FeedParser();
-const oldFeedItems = [];
+const feedparser = require('feedparser-promised');
+
+let oldFeedItems = [];
+
+if (fs.existsSync('docs/rss.xml')) {
+    feedparser.parse(fs.createReadStream('docs/rss.xml'))
+        .then(items => {
+            for (let item of items) {
+                oldFeedItems.push(item);
+            }
+
+            pubDate = items[0].pubDate || new Date();
+            lastBuildDate = items[0].date || new Date();
+        })
+        .catch(err => console.error(err));
+}
+
 const filePath = path.resolve('docs/rss.xml');
 const fileContent = fs.readFileSync(filePath).toString();
 const newsDir = path.join(__dirname, 'docs/_includes/news');
