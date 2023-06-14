@@ -165,9 +165,18 @@ jobs:
         with:
           ref: retype
 
+      - name: Pull latest changes from retype branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull origin retype
+
       - name: Copy rss.xml from the temporary location to retype branch
         run: |
           cp /tmp/rss.xml ./rss.xml
+
+      - name: Commit and push if it's necessary
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add rss.xml
