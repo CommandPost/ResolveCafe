@@ -48,7 +48,7 @@ const feed = new RSS({
     pubDate: oldFeedItems.length > 0 ? oldFeedItems[0].date : new Date(),
 });
 
-const newsDir = path.join(__dirname, 'docs/_includes/news');
+const newsDir = path.join(process.env.GITHUB_WORKSPACE, 'docs/_includes/news');
 
 // Find all markdown files in newsDir
 const files = fs.readdirSync(newsDir).filter(fn => fn.endsWith('.md'));
