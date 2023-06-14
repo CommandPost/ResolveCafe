@@ -1,4 +1,4 @@
 !!!info Sponsored
-**At Moodlab, we’re rethinking the colour pipeline.**<br />
-[Learn More](https://moodlab.online){target="_blank"}
+At Moodlab, we’re **rethinking** the colour pipeline.<br />
+[Click here to learn more!](https://moodlab.online){target="_blank"}
 !!!
