@@ -1,4 +1,3 @@
 ## P
 
 {{ include "faq/placeholder" }}
-
