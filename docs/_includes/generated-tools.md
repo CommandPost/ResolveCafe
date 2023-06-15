@@ -2,19 +2,23 @@
 
 {{ include "tools/audio-design-desk" }}
 
-
 ---
 
 ## C
 
 {{ include "tools/canister" }}
 
+---
+
 {{ include "tools/cinecred" }}
+
+---
 
 {{ include "tools/cleanterview" }}
 
-{{ include "tools/commandpost" }}
+---
 
+{{ include "tools/commandpost" }}
 
 ---
 
@@ -22,12 +26,17 @@
 
 {{ include "tools/editing-tools-io" }}
 
+---
+
 {{ include "tools/editready" }}
+
+---
 
 {{ include "tools/evrdvr" }}
 
-{{ include "tools/evrexpanse" }}
+---
 
+{{ include "tools/evrexpanse" }}
 
 ---
 
@@ -35,8 +44,9 @@
 
 {{ include "tools/foolcat" }}
 
-{{ include "tools/fxfactory" }}
+---
 
+{{ include "tools/fxfactory" }}
 
 ---
 
@@ -44,13 +54,11 @@
 
 {{ include "tools/neofinder" }}
 
-
 ---
 
 ## O
 
 {{ include "tools/offshoot" }}
-
 
 ---
 
@@ -58,16 +66,25 @@
 
 {{ include "tools/postlab" }}
 
+---
+
 {{ include "tools/postsync" }}
+
+---
 
 {{ include "tools/postwatch" }}
 
+---
+
 {{ include "tools/preference-manager" }}
+
+---
 
 {{ include "tools/pro-maintenance-tools" }}
 
-{{ include "tools/pro-media-tools" }}
+---
 
+{{ include "tools/pro-media-tools" }}
 
 ---
 
@@ -75,19 +92,23 @@
 
 {{ include "tools/reactor" }}
 
-
 ---
 
 ## S
 
 {{ include "tools/scaling-fix" }}
 
+---
+
 {{ include "tools/scopebox" }}
+
+---
 
 {{ include "tools/shutter-encoder" }}
 
-{{ include "tools/smart-video-splitter" }}
+---
 
+{{ include "tools/smart-video-splitter" }}
 
 ---
 
