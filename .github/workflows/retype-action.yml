@@ -64,7 +64,7 @@ jobs:
       - name: Generate Asset Management Markdown
         env:
           PAGE_NAME: "asset-management"
-        run: node .github/scripts/generate-asset-management.js
+        run: node .github/scripts/generate-markdown.js
 
       - name: Commit and push if it's necessary
         run: |
