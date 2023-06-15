@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Thu, 15 Jun 2023 01:55:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jun 2023 06:45:12 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate>
         <item>
@@ -208,6 +208,17 @@
             <link>https://resolve.cafe/#13th-june-2023</link>
             <guid isPermaLink="false">13th June 2023</guid>
             <pubDate>Tue, 13 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[15th June 2023]]></title>
+            <description><![CDATA[<p><strong>DaVinci Resolve 18.5 Beta 4</strong> is out now!</p>
+<p>It adds additional improvements to the DaVinci public beta including transcription support for traditional Mandarin, greater control over subtitle export, improved system stability when displaying clip handles in the color page and more.</p>
+<p>You can download and learn more <a href="https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion">here</a>.</p>
+<p><img src="https://fcp.cafe/static/resolve-18-5.jpeg" alt=""></p>
+]]></description>
+            <link>https://resolve.cafe/#15th-june-2023</link>
+            <guid isPermaLink="false">15th June 2023</guid>
+            <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
