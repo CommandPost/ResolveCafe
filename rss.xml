@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Thu, 15 Jun 2023 06:45:12 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 15 Jun 2023 06:55:10 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate>
         <item>
@@ -212,9 +212,13 @@
         <item>
             <title><![CDATA[15th June 2023]]></title>
             <description><![CDATA[<p><strong>DaVinci Resolve 18.5 Beta 4</strong> is out now!</p>
-<p>It adds additional improvements to the DaVinci public beta including transcription support for traditional Mandarin, greater control over subtitle export, improved system stability when displaying clip handles in the color page and more.</p>
+<p>Today, the release of the public beta 4 of DaVinci Resolve 18.5 was announced, boasting additional improvements to the prior DaVinci public beta, including enhanced control over subtitle export. This update ensures that only activated subtitles are included in the render, subsequently displayed on the export. The update also guarantees greater system stability when displaying clip handles in the color page, thereby facilitating a smoother grading process.</p>
+<p>The software update brings several scripting API enhancements for track and timeline management. This allows users to write scripts to automate frequent functions, such as placing and replacing visual effects on the DaVinci Resolve timeline. The result is an accelerated post-production process with fewer errors.</p>
+<p>For DaVinci Resolve Studio users, the beta release includes support for transcribing both traditional and simplified Mandarin. Moreover, it enhances vertical video resolution during remote monitoring, providing superior quality vision while securely streaming footage to an offsite director or client.</p>
+<p>The update also introduces support for Blackmagic RAW 3.2, alongside numerous bug fixes and general performance and stability enhancements.</p>
+<p>DaVinci Resolve 18.5 Beta 4 is now available as a free download.</p>
 <p>You can download and learn more <a href="https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion">here</a>.</p>
-<p><img src="https://fcp.cafe/static/resolve-18-5.jpeg" alt=""></p>
+<p><img src="https://fcp.cafe/static/resolve-18-5.png" alt=""></p>
 ]]></description>
             <link>https://resolve.cafe/#15th-june-2023</link>
             <guid isPermaLink="false">15th June 2023</guid>
