@@ -6,6 +6,8 @@ No more waiting. No more transcoding. No more massive ProRes files.
 
 Save hours of time, and terabytes of storage!
 
+![](../static/braw-toolbox.jpg)
+
 The BRAW Toolbox Workflow Extension allows you to prepare all of your footage prior to import. You can easily and quickly change all the RAW parameters, and copy and paste settings from different BRAW clips. You can even save and restore Presets that contain specific parameters, saving time for example, if you always use the same Gamut & Gamma.
 
 Once imported into Final Cut Pro, you can still modify the RAW parameters at any time.
@@ -19,6 +21,10 @@ There are automatic Decode Quality options for both HD and UltraHD projects, and
 You can also use the Workflow Extension to send your project/timeline to DaVinci Resolve for grading - all using BRAW files directly from the camera!
 
 BRAW Toolbox requires Final Cut Pro 10.6.5 or later.
+
+[!button text="Visit Website" target="blank" variant="info"](https://brawtoolbox.io)
+
+---
 
 #### User Reviews
 
@@ -98,5 +104,3 @@ The impossible made possible.
 Amazing to work natively with BRAW in my favourite editor. Thank you!
 _MadMitch1993 – Jan 30, 2023 (Apple App Store Review)_
 :::
-
-[!button text="Visit Website" target="blank" variant="info"](https://brawtoolbox.io)

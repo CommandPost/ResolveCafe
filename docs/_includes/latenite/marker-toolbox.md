@@ -2,6 +2,8 @@
 
 **Marker Toolbox** allows you to import Vimeo CSV, Wipster CSV, Dropbox Replay JSON & Email Comments into Apple's Final Cut Pro via a handy Workflow Extension.
 
+![](../static/marker-toolbox.png)
+
 You can also OPTIONALLY use OpenAI's ChatGPT to help translate email comments into markers using your own personal OpenAI API key!
 
 If you use Vimeo Review pages or Wipster to share video edits with clients to consolidate feedback, you can simply export a CSV file from Vimeo or Wipster, and drag it into the Workflow Extension to convert the comments into Markers within Final Cut Pro. It's fast and easy!
@@ -17,6 +19,10 @@ You can also easily copy and paste client feedback from emails into the Workflow
 This can be a MASSIVE time saver, as you can simply copy and paste a long list of email comments, and ChatGPT will do the work to convert them into easy-to-read Final Cut Pro markers, that you can then easily navigate via the Timeline Index.
 
 Marker Toolbox requires Final Cut Pro 10.6.5 or later.
+
+[!button text="Visit Website" target="blank" variant="info"](https://markertoolbox.io)
+
+---
 
 #### User Reviews
 
@@ -44,5 +50,3 @@ I wanted an app like this since I started editing. Now for the first time I can 
 
 _Blazy – Apr 6, 2023 (Apple App Store Review)_
 :::
-
-[!button text="Visit Website" target="blank" variant="info"](https://markertoolbox.io)
