@@ -40,6 +40,18 @@ If there's something missing, [please let us know](/contribute/).
 
 ---
 
+## Filmmakers using DaVinci Resolve
+
+- **_If you have something to add here, let us know!_**
+
+---
+
+## YouTubers using DaVinci Resolve
+
+- **_If you have something to add here, let us know!_**
+
+---
+
 ## Feature Films
 
 ### Drama
@@ -56,6 +68,8 @@ If there's something missing, [please let us know](/contribute/).
 
 ### Documentary
 
+- Power Play: Transforming Australia's biggest climate polluter (2023) {{watch}}(https://www.youtube.com/watch?v=K6LA57fQTX4)
+- 5 Doors - Collingwood Yards (2022) {{watch}}(https://vimeo.com/626016111)
 - Everest VR: Journey to the Top of the World (2020) {{casestudy}}(https://www.blackmagicdesign.com/media/release/20200428-01)
 
 ---
@@ -92,9 +106,8 @@ If there's something missing, [please let us know](/contribute/).
 
 ## Online Series
 
-- Once Upon a Time in Chinatown (2021) {{Vision+}} {{imdb}}(https://www.imdb.com/title/tt15661052/)
-- Angkringan (2021) {{MolaTV}} {{imdb}}(https://www.imdb.com/title/tt15663004/)
-
+- Once Upon a Time in Chinatown (2021) {{visionplus}} {{imdb}}(https://www.imdb.com/title/tt15661052/)
+- Angkringan (2021) {{molatv}} {{imdb}}(https://www.imdb.com/title/tt15663004/)
 
 ---
 
@@ -107,7 +120,7 @@ If there's something missing, [please let us know](/contribute/).
 
 ## Television Commercials
 
-- **_If you have something to add here, let us know!_**
+- Mountain Goat - You Can’t Tame A Goat (2021) {{watch}}(https://vimeo.com/567344214)
 
 ---
 
