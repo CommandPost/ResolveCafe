@@ -1,0 +1,1 @@
+- [Keyframe Editor in Color Page Repeatedly and Unintentionally Deselecting Selection (July 19, 2023)](https://github.com/CommandPost/ResolveCafe/issues/4){target="_blank"}
