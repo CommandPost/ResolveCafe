@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Wed, 19 Jul 2023 11:11:06 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Jul 2023 04:51:26 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate>
         <item>
@@ -270,16 +270,6 @@
             <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[18th June 2023]]></title>
-            <description><![CDATA[<p>Russ Hughes has written a great blog post titled: <strong>I Ignored Davinci Resolve - I Was Wrong</strong>.</p>
-<p>It explains why he jumped from Final Cut Pro to DaVinci Resolve for editing, from a sound designers perspective.</p>
-<p>You can read <a href="https://www.pro-tools-expert.com/production-expert-1/i-ignored-davinci-resolve-i-was-wrong">here</a>.</p>
-]]></description>
-            <link>https://resolve.cafe/#18th-june-2023</link>
-            <guid isPermaLink="false">18th June 2023</guid>
-            <pubDate>Sun, 18 Jun 2023 00:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[22nd June 2023]]></title>
             <description><![CDATA[<p><strong>Marker Toolbox v1.2.0</strong> is out now! It has some awesome new features:</p>
 <ul>
@@ -292,6 +282,17 @@
             <link>https://resolve.cafe/#22nd-june-2023</link>
             <guid isPermaLink="false">22nd June 2023</guid>
             <pubDate>Thu, 22 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[21st July 2023]]></title>
+            <description><![CDATA[<p><strong>DaVinci Resolve 18.5</strong> final release is now available!</p>
+<p>It's a massive update with over 100 new features including text based editing, AI dialogue transcription, new cut page editing toolset and new Fairlight mix automation.</p>
+<p>You can download <a href="https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion">here</a>.</p>
+<p><img src="https://fcp.cafe/static/resolve-18-5.jpeg" alt=""></p>
+]]></description>
+            <link>https://resolve.cafe/#21st-july-2023</link>
+            <guid isPermaLink="false">21st July 2023</guid>
+            <pubDate>Fri, 21 Jul 2023 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
