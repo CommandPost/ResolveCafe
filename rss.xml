@@ -4,7 +4,7 @@
         <description><![CDATA[Latest News from Resolve Cafe]]></description>
         <link>https://resolve.cafe</link>
         <generator>Resolve Cafe</generator>
-        <lastBuildDate>Fri, 21 Jul 2023 04:51:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Aug 2023 16:23:52 GMT</lastBuildDate>
         <atom:link href="https://resolve.cafe/rss.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate>
         <item>
@@ -268,6 +268,16 @@
             <link>https://resolve.cafe/#15th-june-2023</link>
             <guid isPermaLink="false">15th June 2023</guid>
             <pubDate>Thu, 15 Jun 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[18th June 2023]]></title>
+            <description><![CDATA[<p>Russ Hughes has written a great blog post titled: <strong>I Ignored Davinci Resolve - I Was Wrong</strong>.</p>
+<p>It explains why he jumped from Final Cut Pro to DaVinci Resolve for editing, from a sound designers perspective.</p>
+<p>You can read <a href="https://www.pro-tools-expert.com/production-expert-1/i-ignored-davinci-resolve-i-was-wrong">here</a>.</p>
+]]></description>
+            <link>https://resolve.cafe/#18th-june-2023</link>
+            <guid isPermaLink="false">18th June 2023</guid>
+            <pubDate>Sun, 18 Jun 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[22nd June 2023]]></title>
