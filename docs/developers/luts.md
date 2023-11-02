@@ -16,8 +16,9 @@ A 1D lookup table allows output values to be specified corresponding to
 equally spaced input values in a given range. In the header of the LUT, the
 size and range of the LUT can be specified as follows:
 
-LUT_1D_SIZE N
-LUT_1D_INPUT_RANGE MIN_VAL MAX_VAL
+`LUT_1D_SIZE N`
+
+`LUT_1D_INPUT_RANGE MIN_VAL MAX_VAL`
 
 where:
 N - number of entries, up to a maximum of 65536
@@ -52,6 +53,7 @@ Similar to a 1D LUT, the header contains information about the size of the
 lookup table as well as the range of input values.
 
 `LUT_3D_SIZE N`
+
 `LUT_3D_INPUT_RANGE MIN_VAL MAX_VAL`
 
 where:
